@@ -313,10 +313,23 @@
                         <p>Free up inactive memory and system cache instantly with one click. Clear your memory buffer smoothly while experiencing gorgeous neon visual metrics and transition feedback.</p>
                     </div>
                     <div class="bento-graphic">
-                        <div class="boost-gauge-mock">
-                            <div class="mock-speed">
-                                <span class="num">8.2</span>
-                                <span class="unit">GB FREED</span>
+                        <div class="boost-gauge-mock" style="border: none; width: 160px; height: 90px; border-radius: 0; background: none; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <svg width="160" height="100" viewBox="0 0 160 100" style="position: absolute; top: 0; left: 0;">
+                                <!-- Outer track -->
+                                <path d="M 20 80 A 60 60 0 0 1 140 80" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="8" stroke-linecap="round" />
+                                <!-- Active colored path -->
+                                <path d="M 20 80 A 60 60 0 0 1 125 45" fill="none" stroke="url(#cyanGreenGrad)" stroke-width="8" stroke-linecap="round" />
+                                
+                                <defs>
+                                    <linearGradient id="cyanGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="var(--secondary)" />
+                                        <stop offset="100%" stop-color="var(--primary)" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="mock-speed" style="z-index: 10; margin-top: 15px;">
+                                <span class="num" style="font-size: 1.6rem; font-weight: 900; color: var(--primary); text-shadow: 0 0 15px rgba(16, 185, 129, 0.4); display: block;">8.2</span>
+                                <span class="unit" style="font-size: 0.6rem; font-weight: 700; color: var(--text-secondary); letter-spacing: 0.5px; display: block;">GB FREED</span>
                             </div>
                         </div>
                     </div>
