@@ -119,7 +119,7 @@ struct SettingsView: View {
                     // ── About ──────────────────────────────────
                     SettingsSection(title: "About CleanYourMac", icon: "info.circle.fill", accent: appState.selectedSection.themeColor) {
                         VStack(spacing: 0) {
-                            SettingsMetaRow(label: "Product Version", value: "2.0.1 (Platinum)")
+                            SettingsMetaRow(label: "Product Version", value: "1.0.3 (Platinum)")
                             Divider().background(Color.dcOverlayLine).padding(.horizontal, 20)
                             SettingsMetaRow(label: "Build Signature", value: "2025.05.16.MAC")
                             Divider().background(Color.dcOverlayLine).padding(.horizontal, 20)
