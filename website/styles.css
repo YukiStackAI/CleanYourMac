@@ -1177,3 +1177,19 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.nav-link-footer {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+    margin-bottom: 8px;
+}
+
+.nav-link-footer:hover {
+    color: var(--primary);
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Support | CleanYourMac Platinum</title>
+    <meta name="description" content="Frequently Asked Questions and troubleshooting guides for CleanYourMac Platinum utility. Get instant support.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Glows -->
+    <div class="glow-sphere glow-left" style="top: 100px;"></div>
+    <div class="glow-sphere glow-right" style="top: 600px;"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-group">
+                <img src="owl.png" alt="CleanYourMac Logo" class="nav-logo">
+                <span class="brand-name">CleanYourMac <span class="badge">PLATINUM</span></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#dashboard" class="nav-link">Dashboard</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="faq.html" class="nav-link active">FAQ</a>
+                <a href="index.html#download" class="btn btn-secondary">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FAQ Hero -->
+    <section class="hero-section" style="padding-bottom: 40px; text-align: center;">
+        <div class="container">
+            <span class="tagline"><i class="fa-solid fa-circle-question"></i> Help Center</span>
+            <h1 class="hero-title" style="margin-bottom: 16px;">Frequently Asked <span class="gradient-text">Questions</span></h1>
+            <p class="hero-subtitle" style="margin: 0 auto 40px auto; max-width: 600px;">Everything you need to know about CleanYourMac Platinum, system requirements, Apple Silicon optimization, and installation instructions.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Layout -->
+    <section class="faq-content-section" style="padding: 40px 0 100px 0;">
+        <div class="container" style="max-width: 800px;">
+            <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 20px;">
+                <!-- Q1 -->
+                <div class="bento-card" style="min-height: auto; padding: 24px 32px; cursor: pointer; transition: all 0.3s ease;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;"><i class="fa-solid fa-shield-halved text-green" style="margin-right: 12px;"></i> Is CleanYourMac safe to use?</h3>
+                        <span class="faq-toggle-icon" style="font-size: 1.1rem; color: var(--primary); transition: transform 0.3s;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; padding-top: 0;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px;">
+                            Absolutely. CleanYourMac is designed with macOS Safety Guidelines. Our platform never deletes user data or crucial system core elements. It safely sweeps cache files, application residues, and crash dumps that are safe to discard.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="bento-card" style="min-height: auto; padding: 24px 32px; cursor: pointer; transition: all 0.3s ease;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;"><i class="fa-solid fa-cpu text-cyan" style="margin-right: 12px;"></i> Does it fully support M1, M2, and M3 Apple Silicon?</h3>
+                        <span class="faq-toggle-icon" style="font-size: 1.1rem; color: var(--primary); transition: transform 0.3s;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; padding-top: 0;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px;">
+                            Yes! CleanYourMac is compiled natively as a **Universal macOS Binary**. It runs natively on M1, M2, M3 Max/Pro/Ultra chips as well as legacy Intel-based Macs, delivering incredibly fast, highly optimized system sweeps using minimum resources.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bento-card" style="min-height: auto; padding: 24px 32px; cursor: pointer; transition: all 0.3s ease;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;"><i class="fa-solid fa-sparkles text-green" style="margin-right: 12px;"></i> How does the AI Prompt Cleaner work?</h3>
+                        <span class="faq-toggle-icon" style="font-size: 1.1rem; color: var(--primary); transition: transform 0.3s;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; padding-top: 0;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px;">
+                            The AI Prompt Cleaner allows you to command your file cleanup tasks using conversational queries! By typing a prompt like *"find installation caches and large video files in Downloads"*, our local intelligence parses the file metadata, isolates them instantly, and lets you wipe them with a single click.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bento-card" style="min-height: auto; padding: 24px 32px; cursor: pointer; transition: all 0.3s ease;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;"><i class="fa-solid fa-key text-cyan" style="margin-right: 12px;"></i> Is the Platinum version completely free?</h3>
+                        <span class="faq-toggle-icon" style="font-size: 1.1rem; color: var(--primary); transition: transform 0.3s;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; padding-top: 0;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px;">
+                            Yes! Our current Platinum release (Version 1.0.1) is distributed under the MIT Open Source License. You can download and use all premium features (including Smart Scan, Widget monitor, deep uninstallation, and prompt clean) completely free.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="bento-card" style="min-height: auto; padding: 24px 32px; cursor: pointer; transition: all 0.3s ease;">
+                    <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;"><i class="fa-solid fa-toolbox text-green" style="margin-right: 12px;"></i> How do I uninstall applications cleanly?</h3>
+                        <span class="faq-toggle-icon" style="font-size: 1.1rem; color: var(--primary); transition: transform 0.3s;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; padding-top: 0;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px;">
+                            Drag-and-drop uninstallation leaves multiple folder structures in your local `~/Library/Application Support/` and `~/Library/Caches/` directories. To uninstall apps cleanly, select the **App Uninstaller** module, choose the apps, and let CleanYourMac locate and wipe all matching registers, settings, and file logs completely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="index.html" class="logo-group">
+                    <img src="owl.png" alt="CleanYourMac Logo" class="footer-logo">
+                    <span>CleanYourMac</span>
+                </a>
+                <p>Luxury system optimization utilities for Apple Silicon macOS architectures.</p>
+            </div>
+            <div class="footer-right" style="display: flex; gap: 48px;">
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="index.html" class="nav-link-footer">Home</a>
+                    <a href="index.html#features" class="nav-link-footer">Features</a>
+                    <a href="index.html#dashboard" class="nav-link-footer">Dashboard</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="blog.html" class="nav-link-footer">Blog</a>
+                    <a href="faq.html" class="nav-link-footer">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanYourMac. Tailored for peak macOS performance.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Accordion Script -->
+    <script>
+        function toggleFaq(element) {
+            const card = element.parentElement;
+            const answer = card.querySelector('.faq-answer');
+            const icon = card.querySelector('.faq-toggle-icon');
+            
+            // Close other items
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                if (ans !== answer) {
+                    ans.style.maxHeight = '0';
+                    ans.style.opacity = '0';
+                    ans.parentElement.querySelector('.faq-toggle-icon').style.transform = 'rotate(0deg)';
+                }
+            });
+
+            // Toggle current
+            if (answer.style.maxHeight === '0px' || !answer.style.maxHeight) {
+                answer.style.maxHeight = '200px';
+                answer.style.opacity = '1';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.style.maxHeight = '0';
+                answer.style.opacity = '0';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
