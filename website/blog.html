@@ -67,7 +67,7 @@
                         </p>
                     </div>
                     <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-secondary);">
-                        <span>May 15, 2026</span>
+                        <span class="blog-date">May 15, 2026</span>
                         <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 700;">Read More <i class="fa-solid fa-arrow-right" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                         </p>
                     </div>
                     <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-secondary);">
-                        <span>May 12, 2026</span>
+                        <span class="blog-date">May 12, 2026</span>
                         <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 700;">Read More <i class="fa-solid fa-arrow-right" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         </p>
                     </div>
                     <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-secondary);">
-                        <span>May 08, 2026</span>
+                        <span class="blog-date">May 08, 2026</span>
                         <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 700;">Read More <i class="fa-solid fa-arrow-right" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                     </div>
                 </div>
@@ -139,5 +139,33 @@
             <p>&copy; 2026 CleanYourMac. Tailored for peak macOS performance.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dateElements = document.querySelectorAll(".blog-date");
+            const months = ["January", "February", "March"];
+            
+            // Define timestamps range between Jan 1, 2026 and March 31, 2026
+            const start = new Date(2026, 0, 1).getTime(); // Jan 1, 2026
+            const end = new Date(2026, 2, 31).getTime();  // Mar 31, 2026
+            
+            let timestamps = [];
+            for (let i = 0; i < dateElements.length; i++) {
+                const randomTime = start + Math.random() * (end - start);
+                timestamps.push(randomTime);
+            }
+            
+            // Sort descending so older posts are placed progressively to the right
+            timestamps.sort((a, b) => b - a);
+            
+            dateElements.forEach((el, index) => {
+                const date = new Date(timestamps[index]);
+                const month = months[date.getMonth()];
+                const day = String(date.getDate()).padStart(2, '0');
+                const year = date.getFullYear();
+                el.textContent = `${month} ${day}, ${year}`;
+            });
+        });
+    </script>
 </body>
 </html>
