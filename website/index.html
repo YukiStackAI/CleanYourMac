@@ -32,7 +32,7 @@
             <nav class="nav-menu">
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#dashboard" class="nav-link">Dashboard</a>
-                <a href="#download" class="btn btn-secondary">Get Free Trial</a>
+                <a href="#download" class="btn btn-secondary">Download</a>
             </nav>
         </div>
     </header>
@@ -115,6 +115,141 @@
         </div>
     </section>
 
+    <!-- Interactive Dashboard Showcase Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-tag">Visual Command Center</span>
+                <h2>The Platinum Desktop Dashboard</h2>
+                <p>An ultra-premium dark-glassmorphic control center for real-time monitoring and macOS optimization.</p>
+            </div>
+            
+            <div class="dashboard-showcase-frame">
+                <!-- Mac App window -->
+                <div class="app-window">
+                    <div class="app-titlebar">
+                        <div class="window-controls">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="app-window-title">CleanYourMac - System Control Dashboard</div>
+                    </div>
+                    
+                    <div class="app-body">
+                        <!-- Sidebar -->
+                        <aside class="app-sidebar">
+                            <div class="app-brand">
+                                <img src="owl.png" alt="Owl logo">
+                                <span>CleanYourMac</span>
+                            </div>
+                            <nav class="app-nav">
+                                <a href="#" class="nav-item active"><i class="fa-solid fa-gauge"></i> Smart Scan</a>
+                                <a href="#" class="nav-item"><i class="fa-solid fa-sparkles"></i> AI Prompt Cleaner</a>
+                                <a href="#" class="nav-item"><i class="fa-solid fa-box-open"></i> App Uninstaller</a>
+                                <a href="#" class="nav-item"><i class="fa-solid fa-rocket"></i> Startup Booster</a>
+                                <a href="#" class="nav-item"><i class="fa-solid fa-cookie-bite"></i> Browser Shield</a>
+                                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Settings</a>
+                            </nav>
+                        </aside>
+                        
+                        <!-- Main Content Area -->
+                        <main class="app-main">
+                            <!-- Header status bar -->
+                            <div class="main-header">
+                                <h2>Smart Scan Overview</h2>
+                                <div class="header-status">
+                                    <span class="pulse-indicator"></span>
+                                    <span>Engine: Active</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Grid layout -->
+                            <div class="app-dashboard-grid">
+                                <!-- Big circle scan card -->
+                                <div class="dashboard-card main-scan-card">
+                                    <div class="circular-progress-wrap">
+                                        <svg class="circular-svg" viewBox="0 0 100 100">
+                                            <circle class="bg-circle" cx="50" cy="50" r="40"></circle>
+                                            <circle class="fg-circle" cx="50" cy="50" r="40" style="stroke-dashoffset: 60;"></circle>
+                                        </svg>
+                                        <div class="progress-text">
+                                            <span class="score">86%</span>
+                                            <span class="status">HEALTHY</span>
+                                        </div>
+                                    </div>
+                                    <div class="scan-details">
+                                        <h4>Mac Operating at Peak State</h4>
+                                        <p>No optimization actions required. Last scan completed 12 minutes ago.</p>
+                                        <button class="btn btn-primary btn-glow" id="mock-scan-action">
+                                            <i class="fa-solid fa-shield-cat"></i> Re-Scan System
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Detailed Stats -->
+                                <div class="stats-group">
+                                    <!-- CPU Card -->
+                                    <div class="metric-card">
+                                        <div class="metric-header">
+                                            <span><i class="fa-solid fa-microchip"></i> CPU Usage</span>
+                                            <span class="val text-green">14.2%</span>
+                                        </div>
+                                        <div class="progress-bar"><div class="fill green" style="width: 14.2%"></div></div>
+                                        <div class="metric-footer">
+                                            <span>4 Cores Idle</span>
+                                            <span>Temp: 42°C</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Memory Card -->
+                                    <div class="metric-card">
+                                        <div class="metric-header">
+                                            <span><i class="fa-solid fa-memory"></i> RAM Buffer</span>
+                                            <span class="val text-cyan">68.5%</span>
+                                        </div>
+                                        <div class="progress-bar"><div class="fill cyan" style="width: 68.5%"></div></div>
+                                        <div class="metric-footer">
+                                            <span>5.2 GB Free</span>
+                                            <span>16.0 GB Total</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Disk Card -->
+                                    <div class="metric-card">
+                                        <div class="metric-header">
+                                            <span><i class="fa-solid fa-hard-drive"></i> Disk Junk</span>
+                                            <span class="val text-emerald">256.4 GB</span>
+                                        </div>
+                                        <div class="progress-bar"><div class="fill emerald" style="width: 32%"></div></div>
+                                        <div class="metric-footer">
+                                            <span>Cleanable caches found</span>
+                                            <span>1.0 TB Disk Size</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Terminal Diagnostician Console overlay -->
+                            <div class="diagnostics-console">
+                                <div class="console-header">
+                                    <span class="console-title"><i class="fa-solid fa-terminal"></i> Live Diagnostic Logs</span>
+                                    <span class="console-badge">Real-time Stream</span>
+                                </div>
+                                <div class="console-logs">
+                                    <div class="log-line text-cyan">[SYSTEM] Initializing memory buffer analysis...</div>
+                                    <div class="log-line text-green">[OPTIMIZE] RAM Purge request accepted. Releasing 3.42 GB cached cache pool...</div>
+                                    <div class="log-line">[DISK] Sweeping path: /Library/Caches/com.apple.coresymbolicationd...</div>
+                                    <div class="log-line text-primary">[SUCCESS] Found 256.4 GB logs, junk registries, and app debris ready for uninstallation.</div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Bento Grid Features Section -->
     <section id="features" class="features-section">
         <div class="container">
@@ -179,6 +314,50 @@
                             <div class="mock-speed">
                                 <span class="num">8.2</span>
                                 <span class="unit">GB FREED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Startup Optimizations -->
+                <div class="bento-card">
+                    <div class="bento-info">
+                        <div class="icon-wrap bg-cyan">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3>Launch Agents & Startup Booster</h3>
+                        <p>Accelerate your Mac's boot-up speed by managing invisible launch daemons, login helper modules, and background startup services easily.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Browser Shield -->
+                <div class="bento-card">
+                    <div class="bento-info">
+                        <div class="icon-wrap bg-green">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                        </div>
+                        <h3>Browser Cache Shield</h3>
+                        <p>Protect your online privacy by securely cleaning caches, history, local cookies, and form autofill databases from Chrome, Safari, and other browsers.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: Live Analytics -->
+                <div class="bento-card bento-wide">
+                    <div class="bento-info">
+                        <div class="icon-wrap bg-emerald">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h3>Disk Space Visualizer</h3>
+                        <p>Identify large folders, system log dumps, and cached installation media on your drive. Visualize files with interactive green & cyan bars and instantly reclaim gigabytes of storage.</p>
+                    </div>
+                    <div class="bento-graphic">
+                        <div class="visualizer-mock" style="width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 8px;">
+                            <div class="bar-row" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; font-weight: 700;">
+                                <span>~/Downloads/Caches</span>
+                                <span style="color: var(--primary);">48.2 GB (Cleanable)</span>
+                            </div>
+                            <div class="progress-bar" style="background: rgba(255, 255, 255, 0.05); height: 6px; border-radius: 3px; overflow: hidden; width: 100%;">
+                                <div class="fill green" style="background: var(--primary); height: 100%; width: 72%;"></div>
                             </div>
                         </div>
                     </div>
