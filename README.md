@@ -25,10 +25,3 @@ A professional, high-fidelity macOS utility application designed to scan, clean,
 - **Design System:** Sleek dark-glassmorphic styling, custom palette (Platinum Emerald Green & Cyan), smooth micro-animations.
 - **Model:** Local/remote LLM integrations for intelligent prompt analysis.
 
----
-
-## 💻 How to Build & Run
-
-1. Open `DevCleanAI.xcodeproj` in **Xcode** (requires macOS 13+).
-2. Choose the `DevCleanAI` scheme.
-3. Press `Cmd + R` to build and launch!
