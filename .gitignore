@@ -1,0 +1,19 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcworkspace
+!default.xcworkspace
+
+# System / Temporary
+*.log
+.agent/
+*.py
+*.rb
+*.swift-tmp
+build_log.txt
+test_space.swift
