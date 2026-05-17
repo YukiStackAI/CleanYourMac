@@ -1176,6 +1176,12 @@ body {
     .app-dashboard-grid {
         grid-template-columns: 1fr;
     }
+    .stats-banner-section .container > div {
+        grid-template-columns: 1fr !important;
+    }
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+    }
 }
 
 .nav-link-footer {
